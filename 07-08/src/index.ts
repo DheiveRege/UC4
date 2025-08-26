@@ -47,11 +47,11 @@ do {
 const sociedade = ['Frodo', 'Sam', 'Gandalf', 'Legolas', 'Gimli', 'Merry', 'Pippin', 'Aragorn', 'Boromir'];
 
 
-for (let i = 0; i < sociedade.length;i++) {
+for (let i = 0; i < sociedade.length; i++) {
     const Hobbit = sociedade[i];
-    if (Hobbit === "Frodo" || Hobbit === "Sam" || Hobbit === "Merry" || Hobbit === "Pippin" ){
+    if (Hobbit === "Frodo" || Hobbit === "Sam" || Hobbit === "Merry" || Hobbit === "Pippin") {
         console.log(`os hobbits sao: ${Hobbit}`);
-        
+
     }
 
 };
@@ -64,12 +64,12 @@ const personagens = [
     { nome: 'Leia Organa', jedi: false },
     { nome: 'Yoda', jedi: true },
     { nome: 'Darth Vader', jedi: false },
-  ];
+];
 
 
-for (let goiaba in personagens){
-    if(personagens[goiaba].jedi === true){
-    console.log(`porras do jedi: ${personagens[goiaba].nome}`);
+for (let goiaba in personagens) {
+    if (personagens[goiaba].jedi === true) {
+        console.log(`porras do jedi: ${personagens[goiaba].nome}`);
 
     }
 };
@@ -83,28 +83,72 @@ const personagens1 = {
     Sasuke: 'Uchiha',
     Sakura: 'Haruno',
     Kakashi: 'Hatake'
-  };
+};
 
-for(let verClans in personagens1){
+for (let verClans in personagens1) {
     console.log(`${verClans} ${personagens1[verClans as keyof typeof personagens1]}`);
-    
+
 
 };
 
 
 //Exercicio 4
+//pequei na sitax
 
 
-
-
-
-  
-  const personagens3 = [
+const personagens3 = [
     { nome: 'Goku', poder: 15000 },
     { nome: 'Vegeta', poder: 14999 },
     { nome: 'Krillin', poder: 7500 },
     { nome: 'Freeza', poder: 20000 },
-  ];
+];
 
 
-personagens3.forEach(personagem 
+personagens3.forEach(personagem => {
+    if (personagem.poder >= 8000) {
+        console.log(`fodao: ${personagem.nome}`);
+
+    }
+});
+
+
+
+//Exercicio 5 
+//esse foi dificil de fazer
+
+const pokemons = ['Pikachu', 'Charmander', 'Bulbasaur', 'Mewtwo', 'Squirtle'];
+let contador = 0;
+const lendario = "Mewtwo"
+
+while (contador < pokemons.length) {
+    if (pokemons[contador] === lendario) {
+        console.log(`capturando: ${pokemons[contador]}`)
+        break
+    }
+    contador++;
+};
+
+//exercicio 6 
+
+//nao fiz kk
+
+
+let passos = 0;
+const passosParaMordor = 5;
+
+do {
+    console.log(`andando: ${passos}`);
+    passos++;
+
+
+} while (passos < passosParaMordor) {
+    console.log("chegamos ");
+
+};
+
+const array:number[] = [2, 3, 4]
+
+
+
+;
+

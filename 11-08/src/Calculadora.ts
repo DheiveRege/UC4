@@ -76,6 +76,7 @@ let resultado:number
 
             break;
         case "5":
+            console.log("|---------------------|");
             console.log("saiu 😎👍");
             controlador = false;
             break;

@@ -32,8 +32,6 @@ export class Monstro {
     };
 
 
-
-
     // definindo os GETS
     getNome2(): string {
         return this.nome;

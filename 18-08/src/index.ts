@@ -6,7 +6,7 @@ import { Owl } from "./Owl";
 const dogFedido: Dog = new Dog("bolotao", 8);
 const coruja: Owl = new Owl("Olhudo", 3);
 const crocodilo: Crocodile = new Crocodile("valdemir", 65)
-const animais: Animal[] = [dogFedido, crocodilo ,coruja];
+const animais: Animal[] = [dogFedido, crocodilo, coruja];
 
 console.log(dogFedido.name);
 console.log(dogFedido.weight);
@@ -34,8 +34,9 @@ crocodilo.swim(200);
 
 
 
-for(const Animais of animais ){
-    Animais.eat();
-    
-    
+for (const loop of animais) {
+    console.log(`${loop.name} weight ${loop.weight}`); 
+    loop.eat();
+
+
 }

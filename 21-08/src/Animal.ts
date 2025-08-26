@@ -1,7 +1,6 @@
 export class Animal {
-     name: string;
-     weight: number;
-
+    name: string;
+    weight: number
 
     constructor(name: string, weight: number) {
 
@@ -9,10 +8,9 @@ export class Animal {
         this.weight = weight;
     };
 
-
-    eat(): void {
-        console.log(`O ${this.name} is eating`);
-
+    speak():void {
+        console.log(`O ${this.name} esta comendo`);
+        
+  
     };
-
-}
+};

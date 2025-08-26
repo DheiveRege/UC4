@@ -43,21 +43,6 @@ export class Personagem {
     };
     
 
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     // definindo os GETS
     getNome(): string {
@@ -93,4 +78,4 @@ export class Personagem {
     };
 
 
-}
+};
