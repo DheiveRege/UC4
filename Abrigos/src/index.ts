@@ -18,7 +18,8 @@ while (menu) {
     console.log(` 1---  Cadastrar um menu`);
     console.log(` 2---  Listar abrigo`);
     console.log(` 3---  Procurar abrigo`);
-    console.log(` 4---  Sair`);
+    console.log(` 4---  Excluir`);
+    console.log(` 5---  Sair`);
 
 
     const Escolha = readline.question(`Escolha alguma dessas opcoes:`)
@@ -46,6 +47,11 @@ while (menu) {
             break;
 
         case "4":
+            //Excluir um array kkk
+            abc.excluirAbrigo();
+            break;
+
+        case "5":
             // condicao se torna false entao sai do loop
             console.log(`Saindo...................`);
 
