@@ -11,7 +11,7 @@ export class SistemasAbrigo {
     //Construtor vazio
     constructor() {
 
-    }
+    };
 
 
     //Funcao que cria um "abrigo" e coloca as informacoes no ARRAY ABRIGO
