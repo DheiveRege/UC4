@@ -46,7 +46,7 @@ const adimin: SistemaLogin = {
     usuario: "adimin",
     senha: "1234",
    
-}
+};
 
 
 function mostrarProduto(produto: IProduto): void {
@@ -78,6 +78,14 @@ function calcularArea2(circulo: Circuferencia): number {
 
 };
 
+function autenticar(adimin: SistemaLogin): boolean {
+    return adimin.usuario === "adimin" && adimin.senha === "1234"
+
+    
+};
+
+
+
 
 console.log(player.nome, player.idade);
 console.log(mostrarProduto(produto));
@@ -90,6 +98,7 @@ console.log(calcularArea(quadrado));
 console.log(calcularArea2(circulo));
 
 
+console.log(autenticar(adimin));
 
 
 

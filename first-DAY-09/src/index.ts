@@ -1,4 +1,8 @@
 import { Administrador } from "./Administrador";
+import { ClaAkimichi } from "./ClaAkimichi";
+import { ClaHyuuga } from "./ClaHyuuga";
+import { ClaNara } from "./ClaNara";
+import { ClaUchiha } from "./ClaUchiha";
 import { Cliente } from "./Cliente";
 import { Funcionario } from "./Funcionario";
 import { FuncionarioCLT } from "./FuncionarioCLT";
@@ -19,12 +23,13 @@ const cliente: Cliente = new Cliente("TONY", "STARK", "1234AB");
 const adimin: Administrador = new Administrador("Cleber", "adimin","1234AA")
 
 
+const sakuke:ClaUchiha = new ClaUchiha("Uchiha","sasuke");
 
+const zeBranco:ClaHyuuga = new ClaHyuuga("Hyuuga", "Zé do olho branco");
 
+const shikamaru:ClaNara = new ClaNara("Nara","Shikamaru");
 
-
-
-
+const chouza:ClaAkimichi = new ClaAkimichi("Akimichi","chouza");
 
 
 
@@ -39,4 +44,22 @@ console.log(`|-------------------------------------|`);
 
 console.log(adimin.acessarPainel());
 console.log(cliente.acessarPainel());
+
+
+console.log(`|-------------------------------------|`);
+console.log(`|-------------------------------------|`);
+console.log(`|-------------------------------------|`);
+
+sakuke.exibirDetalhes()
+sakuke.ataqueEspecial()
+console.log(`|-------------------------------------|`);
+zeBranco.exibirDetalhes();
+zeBranco.ataqueEspecial();
+console.log(`|-------------------------------------|`);
+shikamaru.exibirDetalhes();
+shikamaru.ataqueEspecial();
+console.log(`|-------------------------------------|`);
+chouza.exibirDetalhes();
+chouza.ataqueEspecial();
+
 

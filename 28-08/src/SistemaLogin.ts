@@ -10,9 +10,5 @@ export class SistemaLogin implements IAutenticacao {
     };
 
 
-    autenticar(usuario: string, senha: string): boolean {
-        return usuario === "adimin" && senha === "1234"
-
-        
-    };
+   
 }

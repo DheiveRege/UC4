@@ -5,5 +5,5 @@ export interface IAutenticacao {
 
 
 
-    autenticar(usuario: string, senha: string): boolean
+
 }
